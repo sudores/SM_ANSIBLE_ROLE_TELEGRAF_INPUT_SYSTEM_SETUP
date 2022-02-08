@@ -1,0 +1,11 @@
+---
+# tasks file for gorobchenkoa.telegraf_hw_setup
+
+- name: Copy system and hw metrics config to hosts
+  ansible.builtin.copy:
+    src: system_metric_conf.conf.j2
+    dest: /etc/telegraf/telegraf.d
+    mode: 0644
+    owner: telegraf
+    group: telegraf
+  notify: telegrafRestart

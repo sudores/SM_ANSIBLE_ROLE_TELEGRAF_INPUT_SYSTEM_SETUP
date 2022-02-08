@@ -1,0 +1,34 @@
+# cpu utilization
+[[inputs.cpu]]
+  percpu = false
+  totalcpu = true
+  collect_cpu_time = false
+  report_active = false
+
+# disk space usage
+[[inputs.disk]]
+  mount_points = ["/"]
+  ignore_fs = ["tmpfs", "devtmpfs", "devfs", "iso9660", "overlay", "aufs", "squashfs"]
+
+# disk io usage
+[[inputs.diskio]]
+  devices = ["sda*", "dm*" ]
+
+# kernel metrics from /proc
+[[inputs.kernel]]
+
+# mem usage
+[[inputs.mem]]
+
+# processes status and quantity
+[[inputs.processes]]
+
+# swap space usage
+[[inputs.swap]]
+
+# basic system metrics
+[[inputs.system]]
+
+# metrics which could be got by netstat(ss)
+[[inputs.netstat]]
+
