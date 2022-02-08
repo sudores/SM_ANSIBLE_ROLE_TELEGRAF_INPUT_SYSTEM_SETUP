@@ -47,6 +47,10 @@ galaxy_info:
     # NOTE: A tag is limited to a single word comprised of alphanumeric characters.
     #       Maximum 20 tags per role.
 
-dependencies: []
+dependencies:
+  - role: gorobchenkoa.telegraf_output_prometheus_setup
+    name: gorobchenkoa.telegraf_output_prometheus_setup
+    src: https://github.com/sudores/SM_ANSIBLE_ROLE_OUTPUT_PROMETHEUS_SETUP.git
+    scm: git
   # List your role dependencies here, one per line. Be sure to remove the '[]' above,
   # if you add dependencies to this list.
